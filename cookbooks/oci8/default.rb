@@ -24,13 +24,6 @@ lib_11_1 = "libclntsh.so.11.1"
    end
 end
 
-#link "#{client_dir}/#{lib_12_1}" do
-#    to "#{client_dir}/#{lib_11_1}"
-#end
-
-
-#instantclient-tools-linux.x64-12.1.0.2.0.zip
-#instantclient-sqlplus-linux.x64-12.1.0.2.0.zip
-#instantclient-sdk-linux.x64-12.1.0.2.0.zip
-#instantclient-odbc-linux.x64-12.1.0.2.0.zip
-#instantclient-basic-linux.x64-12.1.0.2.0.zip
+link "#{client_dir}/#{lib_12_1}" do
+    to "#{client_dir}/#{lib_11_1}"
+end
